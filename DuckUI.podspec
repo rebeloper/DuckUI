@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
     
     # s.public_header_files = 'Pod/Classes/**/*.h'
     # s.frameworks = 'UIKit', 'MapKit'
-    s.dependency 'ReactiveKit'#, '~> 3.12.2'
-    s.dependency 'Bond'#, '~> 7.5.0'
-    s.dependency 'RSKPlaceholderTextView'#, '~> 5.0.1'
+    s.dependency 'ReactiveKit', '~> 3.12.2'
+    s.dependency 'Bond', '~> 7.5.0'
+    s.dependency 'RSKPlaceholderTextView', '~> 5.0.1'
 end
