@@ -1,6 +1,9 @@
+<p align="center">
+<img src='https://github.com/rebeloper/DuckUI/blob/master/Example/DuckUI/Images.xcassets/icon.imageset/icon.png' width="200" />
+</p>
+
 # DuckUI
 
-[![CI Status](https://img.shields.io/travis/rebeloper/DuckUI.svg?style=flat)](https://travis-ci.org/rebeloper/DuckUI)
 [![Version](https://img.shields.io/cocoapods/v/DuckUI.svg?style=flat)](https://cocoapods.org/pods/DuckUI)
 [![License](https://img.shields.io/cocoapods/l/DuckUI.svg?style=flat)](https://cocoapods.org/pods/DuckUI)
 [![Platform](https://img.shields.io/cocoapods/p/DuckUI.svg?style=flat)](https://cocoapods.org/pods/DuckUI)
@@ -22,7 +25,7 @@ pod 'DuckUI'
 
 ## Author
 
-rebeloper, therebeloper@gmail.com
+rebeloper, support@rebeloper.com
 
 ## License
 
