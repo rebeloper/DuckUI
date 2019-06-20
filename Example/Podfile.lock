@@ -1,0 +1,16 @@
+PODS:
+  - DuckUI (0.1.0)
+
+DEPENDENCIES:
+  - DuckUI (from `../`)
+
+EXTERNAL SOURCES:
+  DuckUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DuckUI: 28d08f79a85e50765cacd06d9e9d9a88b3c5eb61
+
+PODFILE CHECKSUM: 29cb1d0cd4d4be05746c333487f2545ad75dfdc6
+
+COCOAPODS: 1.7.2

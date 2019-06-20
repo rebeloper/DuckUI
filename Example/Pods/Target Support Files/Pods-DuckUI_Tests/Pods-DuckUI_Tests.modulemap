@@ -1,0 +1,6 @@
+framework module Pods_DuckUI_Tests {
+  umbrella header "Pods-DuckUI_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

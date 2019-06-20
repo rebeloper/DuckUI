@@ -1,0 +1,6 @@
+framework module DuckUI {
+  umbrella header "DuckUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
