@@ -10,12 +10,37 @@
 		092B7F21E7F5345759C0182FE36B3DDC /* DuckUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC9D4C7153AA8AFCF18C777553D32D5 /* DuckUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29BE63271613F11F70D59743C7F0AAC2 /* Pods-DuckUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72541C39073DE5C37D45D51AEB1AC631 /* Pods-DuckUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		542656EBD48AF4292ABA4EB02BAAAEBF /* Pods-DuckUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B937B674C10E0D7C6E02188403F5F31 /* Pods-DuckUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57DE34EC4EE11E8FA73E36F4DBE4E06E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B35E3394C8E4863803BA250402EEF9 /* ReplaceMe.swift */; };
 		6852994BC1F2B3BCE4F1A78F21DD738A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		75B39179DB7B31C2A7B5EC347C88FDAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		7B96CE9AD1FED62642FD1F6183C3E7B1 /* DuckUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2939082428022F46B9175D156218375 /* DuckUI-dummy.m */; };
 		8AD72E9707D191D31B2FFC904DA721FD /* Pods-DuckUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1426E039A1213BEA48ED5BC7FC39F9D2 /* Pods-DuckUI_Tests-dummy.m */; };
 		99893D94734EBC118ECBC359D454840C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C904D2BC22BC0C6B001590C1 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D29522BC0C6B001590C1 /* UIView+.swift */; };
+		C904D2BD22BC0C6B001590C1 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D29622BC0C6B001590C1 /* UIStackView+.swift */; };
+		C904D2BE22BC0C6B001590C1 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D29722BC0C6B001590C1 /* UILabel+.swift */; };
+		C904D2BF22BC0C6B001590C1 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D29822BC0C6B001590C1 /* UIButton+.swift */; };
+		C904D2C022BC0C6B001590C1 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D29922BC0C6B001590C1 /* UIImageView.swift */; };
+		C904D2C122BC0C6B001590C1 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D29A22BC0C6B001590C1 /* UIApplication+.swift */; };
+		C904D2C222BC0C6B001590C1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D29B22BC0C6B001590C1 /* UIColor+.swift */; };
+		C904D2C322BC0C6B001590C1 /* D_TextView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D29D22BC0C6B001590C1 /* D_TextView+.swift */; };
+		C904D2C422BC0C6B001590C1 /* D_TextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D29E22BC0C6B001590C1 /* D_TextField+.swift */; };
+		C904D2C522BC0C6B001590C1 /* D_Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2A022BC0C6B001590C1 /* D_Stack.swift */; };
+		C904D2C622BC0C6B001590C1 /* D_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2A222BC0C6B001590C1 /* D_TextField.swift */; };
+		C904D2C722BC0C6B001590C1 /* D_Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2A422BC0C6B001590C1 /* D_Log.swift */; };
+		C904D2C822BC0C6B001590C1 /* D_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2A622BC0C6B001590C1 /* D_ViewController.swift */; };
+		C904D2C922BC0C6B001590C1 /* D_Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2A822BC0C6B001590C1 /* D_Line.swift */; };
+		C904D2CA22BC0C6B001590C1 /* D_SCButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2AA22BC0C6B001590C1 /* D_SCButtonView.swift */; };
+		C904D2CB22BC0C6B001590C1 /* D_SCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2AB22BC0C6B001590C1 /* D_SCImageView.swift */; };
+		C904D2CC22BC0C6B001590C1 /* D_SCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2AC22BC0C6B001590C1 /* D_SCView.swift */; };
+		C904D2CD22BC0C6B001590C1 /* D_Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2AE22BC0C6B001590C1 /* D_Typealiases.swift */; };
+		C904D2CE22BC0C6B001590C1 /* D_Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2B022BC0C6B001590C1 /* D_Enums.swift */; };
+		C904D2CF22BC0C6B001590C1 /* D_Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2B222BC0C6B001590C1 /* D_Style.swift */; };
+		C904D2D022BC0C6B001590C1 /* D_AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2B422BC0C6B001590C1 /* D_AlertController.swift */; };
+		C904D2D122BC0C6B001590C1 /* D_Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2B622BC0C6B001590C1 /* D_Debug.swift */; };
+		C904D2D222BC0C6B001590C1 /* D_ScrollViewElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2B822BC0C6B001590C1 /* D_ScrollViewElement.swift */; };
+		C904D2D322BC0C6B001590C1 /* D_ScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2B922BC0C6B001590C1 /* D_ScrollView+.swift */; };
+		C904D2D422BC0C6B001590C1 /* D_ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2BA22BC0C6B001590C1 /* D_ScrollView.swift */; };
+		C904D2D522BC0C6B001590C1 /* D_ScrollViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904D2BB22BC0C6B001590C1 /* D_ScrollViewContainer.swift */; };
 		D422676F24B255174C504BA9408D7674 /* Pods-DuckUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C2A6F46B9FCB87CD4263D8BE10923C /* Pods-DuckUI_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +72,6 @@
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4EC9D4C7153AA8AFCF18C777553D32D5 /* DuckUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DuckUI-umbrella.h"; sourceTree = "<group>"; };
 		602899E6E0AF40EF701216F8BF7E208D /* Pods-DuckUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DuckUI_Example-Info.plist"; sourceTree = "<group>"; };
-		66B35E3394C8E4863803BA250402EEF9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = DuckUI/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		6E198986743962D9F5F89CC969EC1343 /* Pods-DuckUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DuckUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		72541C39073DE5C37D45D51AEB1AC631 /* Pods-DuckUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DuckUI_Example-umbrella.h"; sourceTree = "<group>"; };
 		7A73B97E482EF3E92935DC57C45361F6 /* Pods-DuckUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DuckUI_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -61,6 +85,32 @@
 		C0C2A6F46B9FCB87CD4263D8BE10923C /* Pods-DuckUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DuckUI_Example-dummy.m"; sourceTree = "<group>"; };
 		C49A7F6182D6E1F1A7FBBB2E0787AC9B /* Pods-DuckUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DuckUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C685136531EFA65AAC3FFF95323D7179 /* Pods-DuckUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DuckUI_Example.modulemap"; sourceTree = "<group>"; };
+		C904D29522BC0C6B001590C1 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		C904D29622BC0C6B001590C1 /* UIStackView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		C904D29722BC0C6B001590C1 /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		C904D29822BC0C6B001590C1 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		C904D29922BC0C6B001590C1 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		C904D29A22BC0C6B001590C1 /* UIApplication+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		C904D29B22BC0C6B001590C1 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		C904D29D22BC0C6B001590C1 /* D_TextView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "D_TextView+.swift"; sourceTree = "<group>"; };
+		C904D29E22BC0C6B001590C1 /* D_TextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "D_TextField+.swift"; sourceTree = "<group>"; };
+		C904D2A022BC0C6B001590C1 /* D_Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Stack.swift; sourceTree = "<group>"; };
+		C904D2A222BC0C6B001590C1 /* D_TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_TextField.swift; sourceTree = "<group>"; };
+		C904D2A422BC0C6B001590C1 /* D_Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Log.swift; sourceTree = "<group>"; };
+		C904D2A622BC0C6B001590C1 /* D_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_ViewController.swift; sourceTree = "<group>"; };
+		C904D2A822BC0C6B001590C1 /* D_Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Line.swift; sourceTree = "<group>"; };
+		C904D2AA22BC0C6B001590C1 /* D_SCButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_SCButtonView.swift; sourceTree = "<group>"; };
+		C904D2AB22BC0C6B001590C1 /* D_SCImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_SCImageView.swift; sourceTree = "<group>"; };
+		C904D2AC22BC0C6B001590C1 /* D_SCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_SCView.swift; sourceTree = "<group>"; };
+		C904D2AE22BC0C6B001590C1 /* D_Typealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Typealiases.swift; sourceTree = "<group>"; };
+		C904D2B022BC0C6B001590C1 /* D_Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Enums.swift; sourceTree = "<group>"; };
+		C904D2B222BC0C6B001590C1 /* D_Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Style.swift; sourceTree = "<group>"; };
+		C904D2B422BC0C6B001590C1 /* D_AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_AlertController.swift; sourceTree = "<group>"; };
+		C904D2B622BC0C6B001590C1 /* D_Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Debug.swift; sourceTree = "<group>"; };
+		C904D2B822BC0C6B001590C1 /* D_ScrollViewElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_ScrollViewElement.swift; sourceTree = "<group>"; };
+		C904D2B922BC0C6B001590C1 /* D_ScrollView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "D_ScrollView+.swift"; sourceTree = "<group>"; };
+		C904D2BA22BC0C6B001590C1 /* D_ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_ScrollView.swift; sourceTree = "<group>"; };
+		C904D2BB22BC0C6B001590C1 /* D_ScrollViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_ScrollViewContainer.swift; sourceTree = "<group>"; };
 		D14CF004DAC6167B3270F0EA925E6255 /* Pods-DuckUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DuckUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D2939082428022F46B9175D156218375 /* DuckUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DuckUI-dummy.m"; sourceTree = "<group>"; };
 		DE54FDB7CA41DC3BC4BB0746595A6E04 /* Pods-DuckUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DuckUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,10 +227,163 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C904D29122BC0C4D001590C1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2B322BC0C6B001590C1 /* D_AlertController */,
+				C904D2B522BC0C6B001590C1 /* D_Debug */,
+				C904D2AF22BC0C6B001590C1 /* D_Enums */,
+				C904D2A722BC0C6B001590C1 /* D_Line */,
+				C904D2A322BC0C6B001590C1 /* D_Log */,
+				C904D2B722BC0C6B001590C1 /* D_ScrollView */,
+				C904D2A922BC0C6B001590C1 /* D_SCViews */,
+				C904D29F22BC0C6B001590C1 /* D_Stack */,
+				C904D2B122BC0C6B001590C1 /* D_Style */,
+				C904D2A122BC0C6B001590C1 /* D_TextField */,
+				C904D2AD22BC0C6B001590C1 /* D_Typealiases */,
+				C904D2A522BC0C6B001590C1 /* D_ViewController */,
+				C904D29322BC0C6B001590C1 /* Extensions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C904D29322BC0C6B001590C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C904D29422BC0C6B001590C1 /* UIKit */,
+				C904D29C22BC0C6B001590C1 /* D_Extensions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C904D29422BC0C6B001590C1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C904D29522BC0C6B001590C1 /* UIView+.swift */,
+				C904D29622BC0C6B001590C1 /* UIStackView+.swift */,
+				C904D29722BC0C6B001590C1 /* UILabel+.swift */,
+				C904D29822BC0C6B001590C1 /* UIButton+.swift */,
+				C904D29922BC0C6B001590C1 /* UIImageView.swift */,
+				C904D29A22BC0C6B001590C1 /* UIApplication+.swift */,
+				C904D29B22BC0C6B001590C1 /* UIColor+.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C904D29C22BC0C6B001590C1 /* D_Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C904D29D22BC0C6B001590C1 /* D_TextView+.swift */,
+				C904D29E22BC0C6B001590C1 /* D_TextField+.swift */,
+			);
+			path = D_Extensions;
+			sourceTree = "<group>";
+		};
+		C904D29F22BC0C6B001590C1 /* D_Stack */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2A022BC0C6B001590C1 /* D_Stack.swift */,
+			);
+			path = D_Stack;
+			sourceTree = "<group>";
+		};
+		C904D2A122BC0C6B001590C1 /* D_TextField */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2A222BC0C6B001590C1 /* D_TextField.swift */,
+			);
+			path = D_TextField;
+			sourceTree = "<group>";
+		};
+		C904D2A322BC0C6B001590C1 /* D_Log */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2A422BC0C6B001590C1 /* D_Log.swift */,
+			);
+			path = D_Log;
+			sourceTree = "<group>";
+		};
+		C904D2A522BC0C6B001590C1 /* D_ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2A622BC0C6B001590C1 /* D_ViewController.swift */,
+			);
+			path = D_ViewController;
+			sourceTree = "<group>";
+		};
+		C904D2A722BC0C6B001590C1 /* D_Line */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2A822BC0C6B001590C1 /* D_Line.swift */,
+			);
+			path = D_Line;
+			sourceTree = "<group>";
+		};
+		C904D2A922BC0C6B001590C1 /* D_SCViews */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2AA22BC0C6B001590C1 /* D_SCButtonView.swift */,
+				C904D2AB22BC0C6B001590C1 /* D_SCImageView.swift */,
+				C904D2AC22BC0C6B001590C1 /* D_SCView.swift */,
+			);
+			path = D_SCViews;
+			sourceTree = "<group>";
+		};
+		C904D2AD22BC0C6B001590C1 /* D_Typealiases */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2AE22BC0C6B001590C1 /* D_Typealiases.swift */,
+			);
+			path = D_Typealiases;
+			sourceTree = "<group>";
+		};
+		C904D2AF22BC0C6B001590C1 /* D_Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2B022BC0C6B001590C1 /* D_Enums.swift */,
+			);
+			path = D_Enums;
+			sourceTree = "<group>";
+		};
+		C904D2B122BC0C6B001590C1 /* D_Style */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2B222BC0C6B001590C1 /* D_Style.swift */,
+			);
+			path = D_Style;
+			sourceTree = "<group>";
+		};
+		C904D2B322BC0C6B001590C1 /* D_AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2B422BC0C6B001590C1 /* D_AlertController.swift */,
+			);
+			path = D_AlertController;
+			sourceTree = "<group>";
+		};
+		C904D2B522BC0C6B001590C1 /* D_Debug */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2B622BC0C6B001590C1 /* D_Debug.swift */,
+			);
+			path = D_Debug;
+			sourceTree = "<group>";
+		};
+		C904D2B722BC0C6B001590C1 /* D_ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C904D2B822BC0C6B001590C1 /* D_ScrollViewElement.swift */,
+				C904D2B922BC0C6B001590C1 /* D_ScrollView+.swift */,
+				C904D2BA22BC0C6B001590C1 /* D_ScrollView.swift */,
+				C904D2BB22BC0C6B001590C1 /* D_ScrollViewContainer.swift */,
+			);
+			path = D_ScrollView;
+			sourceTree = "<group>";
+		};
 		C952CC37A8ED97E225583EDBFC6F7AA8 /* DuckUI */ = {
 			isa = PBXGroup;
 			children = (
-				66B35E3394C8E4863803BA250402EEF9 /* ReplaceMe.swift */,
+				C904D29122BC0C4D001590C1 /* Source */,
 				9A8B46745DB9CFF2D548014496587301 /* Pod */,
 				E9C5A176E155B74CB6E990AAB46A585F /* Support Files */,
 			);
@@ -380,8 +583,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C904D2C622BC0C6B001590C1 /* D_TextField.swift in Sources */,
+				C904D2C822BC0C6B001590C1 /* D_ViewController.swift in Sources */,
+				C904D2CB22BC0C6B001590C1 /* D_SCImageView.swift in Sources */,
+				C904D2D022BC0C6B001590C1 /* D_AlertController.swift in Sources */,
+				C904D2C922BC0C6B001590C1 /* D_Line.swift in Sources */,
+				C904D2C522BC0C6B001590C1 /* D_Stack.swift in Sources */,
+				C904D2C422BC0C6B001590C1 /* D_TextField+.swift in Sources */,
+				C904D2CF22BC0C6B001590C1 /* D_Style.swift in Sources */,
+				C904D2BC22BC0C6B001590C1 /* UIView+.swift in Sources */,
+				C904D2CE22BC0C6B001590C1 /* D_Enums.swift in Sources */,
+				C904D2CC22BC0C6B001590C1 /* D_SCView.swift in Sources */,
+				C904D2C222BC0C6B001590C1 /* UIColor+.swift in Sources */,
+				C904D2C322BC0C6B001590C1 /* D_TextView+.swift in Sources */,
+				C904D2D322BC0C6B001590C1 /* D_ScrollView+.swift in Sources */,
+				C904D2D422BC0C6B001590C1 /* D_ScrollView.swift in Sources */,
+				C904D2CD22BC0C6B001590C1 /* D_Typealiases.swift in Sources */,
+				C904D2BD22BC0C6B001590C1 /* UIStackView+.swift in Sources */,
+				C904D2C722BC0C6B001590C1 /* D_Log.swift in Sources */,
+				C904D2C122BC0C6B001590C1 /* UIApplication+.swift in Sources */,
+				C904D2BE22BC0C6B001590C1 /* UILabel+.swift in Sources */,
 				7B96CE9AD1FED62642FD1F6183C3E7B1 /* DuckUI-dummy.m in Sources */,
-				57DE34EC4EE11E8FA73E36F4DBE4E06E /* ReplaceMe.swift in Sources */,
+				C904D2D222BC0C6B001590C1 /* D_ScrollViewElement.swift in Sources */,
+				C904D2C022BC0C6B001590C1 /* UIImageView.swift in Sources */,
+				C904D2D122BC0C6B001590C1 /* D_Debug.swift in Sources */,
+				C904D2BF22BC0C6B001590C1 /* UIButton+.swift in Sources */,
+				C904D2CA22BC0C6B001590C1 /* D_SCButtonView.swift in Sources */,
+				C904D2D522BC0C6B001590C1 /* D_ScrollViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
