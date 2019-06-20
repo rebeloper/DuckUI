@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DuckUI_Example' do
+  pod 'DuckUI', :path => '../'
+
+  target 'DuckUI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
