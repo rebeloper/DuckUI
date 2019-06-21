@@ -1,7 +1,7 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DuckUI"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Bond" "${PODS_CONFIGURATION_BUILD_DIR}/Differ" "${PODS_CONFIGURATION_BUILD_DIR}/DuckUI" "${PODS_CONFIGURATION_BUILD_DIR}/RSKPlaceholderTextView" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DuckUI/DuckUI.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "DuckUI"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Bond/Bond.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Differ/Differ.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/DuckUI/DuckUI.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RSKPlaceholderTextView/RSKPlaceholderTextView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveKit/ReactiveKit.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Bond" -framework "Differ" -framework "DuckUI" -framework "RSKPlaceholderTextView" -framework "ReactiveKit" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
