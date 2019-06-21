@@ -15,7 +15,7 @@ open class D_ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupViewsWith(safeArea: .all)
-        bond()
+        bind()
         observe()
         fetchData()
     }
@@ -29,7 +29,7 @@ open class D_ViewController: UIViewController {
         container.edgeTo(view, safeArea: safeArea)
     }
     
-    open func bond() {}
+    open func bind() {}
     
     open func observe() {}
     
