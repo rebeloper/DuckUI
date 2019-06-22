@@ -209,11 +209,11 @@
 		C93777F422BE1BB2003120A7 /* D_TextView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777D222BE1BB2003120A7 /* D_TextView+.swift */; };
 		C93777F522BE1BB2003120A7 /* D_TextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777D322BE1BB2003120A7 /* D_TextField+.swift */; };
 		C93777F622BE1BB2003120A7 /* D_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777D522BE1BB2003120A7 /* D_TextField.swift */; };
-		C93777F722BE1BB2003120A7 /* D_Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777D722BE1BB2003120A7 /* D_Hud.swift */; };
 		C93777F822BE1BB2003120A7 /* D_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777D922BE1BB2003120A7 /* D_ViewController.swift */; };
 		C93777F922BE1BB2003120A7 /* D_Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777DB22BE1BB2003120A7 /* D_Line.swift */; };
 		C93777FA22BE1BB2003120A7 /* D_Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777DD22BE1BB2003120A7 /* D_Log.swift */; };
 		C93777FB22BE1BB2003120A7 /* D_Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777E122BE1BB2003120A7 /* D_Enums.swift */; };
+		C93777FD22BE219F003120A7 /* D_Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777FC22BE219E003120A7 /* D_Hud.swift */; };
 		C94DB4FC0998ADD092CC53AE8FEFB664 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2274BF92B254C9A3DC92BD94EB9D3B /* TinyConstraints.swift */; };
 		C97D3113524CF8D6570D535DEB42F62D /* Signal+ChangesetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28AA0DFB594043566943649D95AB5A /* Signal+ChangesetProtocol.swift */; };
 		CA10BEB54B5B4CA797C8B4F67E69BA63 /* jg_hud_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B29ED7DFC759E047F4503DDE81FAAF /* jg_hud_error.png */; };
@@ -637,11 +637,11 @@
 		C93777D222BE1BB2003120A7 /* D_TextView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "D_TextView+.swift"; sourceTree = "<group>"; };
 		C93777D322BE1BB2003120A7 /* D_TextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "D_TextField+.swift"; sourceTree = "<group>"; };
 		C93777D522BE1BB2003120A7 /* D_TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_TextField.swift; sourceTree = "<group>"; };
-		C93777D722BE1BB2003120A7 /* D_Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Hud.swift; sourceTree = "<group>"; };
 		C93777D922BE1BB2003120A7 /* D_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_ViewController.swift; sourceTree = "<group>"; };
 		C93777DB22BE1BB2003120A7 /* D_Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Line.swift; sourceTree = "<group>"; };
 		C93777DD22BE1BB2003120A7 /* D_Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Log.swift; sourceTree = "<group>"; };
 		C93777E122BE1BB2003120A7 /* D_Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Enums.swift; sourceTree = "<group>"; };
+		C93777FC22BE219E003120A7 /* D_Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_Hud.swift; sourceTree = "<group>"; };
 		CB45D8FA0429EF956FF105FA9C14CA8A /* Layoutless-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Layoutless-dummy.m"; sourceTree = "<group>"; };
 		CBF4019F130BF04F46FD24E3A6D6C70F /* UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableView.swift; path = Sources/Bond/UIKit/UITableView.swift; sourceTree = "<group>"; };
 		CC94ED73B3D119CF0700BE6C3B134BA5 /* Layoutless-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Layoutless-prefix.pch"; sourceTree = "<group>"; };
@@ -1322,7 +1322,7 @@
 		C93777D622BE1BB2003120A7 /* D_Hud */ = {
 			isa = PBXGroup;
 			children = (
-				C93777D722BE1BB2003120A7 /* D_Hud.swift */,
+				C93777FC22BE219E003120A7 /* D_Hud.swift */,
 			);
 			path = D_Hud;
 			sourceTree = "<group>";
@@ -2156,12 +2156,12 @@
 				C93777EE22BE1BB2003120A7 /* UIStackView+.swift in Sources */,
 				C93777F822BE1BB2003120A7 /* D_ViewController.swift in Sources */,
 				C93777F122BE1BB2003120A7 /* UIImageView.swift in Sources */,
+				C93777FD22BE219F003120A7 /* D_Hud.swift in Sources */,
 				C93777FA22BE1BB2003120A7 /* D_Log.swift in Sources */,
 				C93777F022BE1BB2003120A7 /* UIButton+.swift in Sources */,
 				C93777E322BE1BB2003120A7 /* D_SCImageView.swift in Sources */,
 				C93777F622BE1BB2003120A7 /* D_TextField.swift in Sources */,
 				C93777FB22BE1BB2003120A7 /* D_Enums.swift in Sources */,
-				C93777F722BE1BB2003120A7 /* D_Hud.swift in Sources */,
 				C93777EB22BE1BB2003120A7 /* D_AlertController.swift in Sources */,
 				DE9FFF94F72E9CB741193E42EE324340 /* DuckUI-dummy.m in Sources */,
 				C93777F922BE1BB2003120A7 /* D_Line.swift in Sources */,
