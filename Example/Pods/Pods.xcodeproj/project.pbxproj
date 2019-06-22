@@ -1221,7 +1221,6 @@
 				C93777D822BE1BB2003120A7 /* D_ViewController */,
 				C93777DA22BE1BB2003120A7 /* D_Line */,
 				C93777DC22BE1BB2003120A7 /* D_Log */,
-				C93777DF22BE1BB2003120A7 /* D_List */,
 				C93777E022BE1BB2003120A7 /* D_Enums */,
 			);
 			path = Source;
@@ -1350,13 +1349,6 @@
 				C93777DD22BE1BB2003120A7 /* D_Log.swift */,
 			);
 			path = D_Log;
-			sourceTree = "<group>";
-		};
-		C93777DF22BE1BB2003120A7 /* D_List */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = D_List;
 			sourceTree = "<group>";
 		};
 		C93777E022BE1BB2003120A7 /* D_Enums */ = {
