@@ -47,4 +47,5 @@ Pod::Spec.new do |s|
     s.dependency 'Layoutless', '~> 0.4.0'
     s.dependency 'TinyConstraints', '~> 4.0.1'
     s.dependency 'RSKPlaceholderTextView', '~> 5.0.1'
+    s.dependency 'JGProgressHUD', '~> 2.0.3'
 end

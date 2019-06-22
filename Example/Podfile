@@ -8,6 +8,7 @@ target 'DuckUI_Example' do
   pod 'Layoutless', '~> 0.4.0'
   pod 'TinyConstraints', '~> 4.0.1'
   pod 'RSKPlaceholderTextView', '~> 5.0.1'
+  pod 'JGProgressHUD', '~> 2.0.3'
   pod 'DuckUI', :path => '../'
 
   target 'DuckUI_Tests' do
