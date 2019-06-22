@@ -44,5 +44,7 @@ Pod::Spec.new do |s|
     # s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'ReactiveKit', '~> 3.12.2'
     s.dependency 'Bond', '~> 7.5.0'
+    s.dependency 'Layoutless', '~> 0.4.0'
+    s.dependency 'TinyConstraints', '~> 4.0.1'
     s.dependency 'RSKPlaceholderTextView', '~> 5.0.1'
 end

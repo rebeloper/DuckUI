@@ -3,9 +3,11 @@ platform :ios, '12.0'
 use_frameworks!
 
 target 'DuckUI_Example' do
-  pod 'ReactiveKit'#, '~> 3.12.2'
-  pod 'Bond'#, '~> 7.5.0'
-  pod 'RSKPlaceholderTextView'#, '~> 5.0.1'
+  pod 'ReactiveKit', '~> 3.12.2'
+  pod 'Bond', '~> 7.5.0'
+  pod 'Layoutless', '~> 0.4.0'
+  pod 'TinyConstraints', '~> 4.0.1'
+  pod 'RSKPlaceholderTextView', '~> 5.0.1'
   pod 'DuckUI', :path => '../'
 
   target 'DuckUI_Tests' do
