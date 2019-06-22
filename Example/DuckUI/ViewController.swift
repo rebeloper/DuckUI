@@ -6,7 +6,7 @@
 //  Copyright (c) 2019 rebeloper. All rights reserved.
 //
 
-import UIKit
+import DuckUI
 
 class ViewController: UIViewController {
 

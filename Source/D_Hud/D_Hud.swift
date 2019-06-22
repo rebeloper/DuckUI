@@ -20,6 +20,12 @@ public struct HudInfo {
     let type: HudType
     let text: String
     let detailText: String
+    
+    public init(type: HudType, text: String, detailText: String) {
+        self.type = type
+        self.text = text
+        self.detailText = detailText
+    }
 }
 
 public class Hud {
