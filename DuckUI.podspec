@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'DuckUI'
-    s.version          = '0.3.2'
+    s.version          = '0.3.3'
     s.summary          = 'SwiftUI for UIKit. Kinda. 😉'
     
     # This description is used to generate tags and improve search results.
@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
     # s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'ReactiveKit', '~> 3.12.2'
     s.dependency 'Bond', '~> 7.5.0'
-    s.dependency 'Layoutless', '~> 0.4.0'
+    s.dependency 'Layoutless', '~> 0.4.1'
     s.dependency 'TinyConstraints', '~> 4.0.1'
     s.dependency 'RSKPlaceholderTextView', '~> 5.0.1'
     s.dependency 'JGProgressHUD', '~> 2.0.3'
