@@ -14,6 +14,7 @@ public enum HudType {
     case update
     case success
     case error
+    case close
 }
 
 public struct HudInfo {
@@ -27,6 +28,8 @@ public struct HudInfo {
         self.detailText = detailText
     }
 }
+
+public let closeHudInfo = HudInfo(type: .close, text: "", detailText: "")
 
 public class Hud {
     
@@ -45,6 +48,8 @@ public class Hud {
             dismiss(hud, type: info.type, text: info.text, detailText: info.detailText)
         case .error:
             dismiss(hud, type: info.type, text: info.text, detailText: info.detailText)
+        case .close:
+            hud.dismiss(animated: true)
         }
     }
     
