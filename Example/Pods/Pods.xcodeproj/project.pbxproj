@@ -188,6 +188,7 @@
 		C57C3B261E5B636B217035073EAF48FF /* SignalProtocol+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117CA994BEC9ACA79E7039E9564FF96 /* SignalProtocol+Sequence.swift */; };
 		C61C5276B070FD44F11A1AC6A5C2EB49 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381389DE5D816497C2339C5806AF788D /* Event.swift */; };
 		C8E4EBE2E781BA82E957696C1A038050 /* BatchUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5277ACBAEF065B9805B5B584EABCD0 /* BatchUpdate.swift */; };
+		C911F2A922BF9C95004C8620 /* D_DispatchQueueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C911F2A822BF9C95004C8620 /* D_DispatchQueueHelper.swift */; };
 		C93777E222BE1BB2003120A7 /* D_SCButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777B822BE1BB2003120A7 /* D_SCButtonView.swift */; };
 		C93777E322BE1BB2003120A7 /* D_SCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777B922BE1BB2003120A7 /* D_SCImageView.swift */; };
 		C93777E422BE1BB2003120A7 /* D_SCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777BA22BE1BB2003120A7 /* D_SCView.swift */; };
@@ -616,6 +617,7 @@
 		C64CE548EC0D1E79818BD3D40E96EE6F /* DuckUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DuckUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C685136531EFA65AAC3FFF95323D7179 /* Pods-DuckUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DuckUI_Example.modulemap"; sourceTree = "<group>"; };
 		C8F7DEC75DB9D2EFBBB78B6141A6BE59 /* ReactiveKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveKit-prefix.pch"; sourceTree = "<group>"; };
+		C911F2A822BF9C95004C8620 /* D_DispatchQueueHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_DispatchQueueHelper.swift; sourceTree = "<group>"; };
 		C93777B822BE1BB2003120A7 /* D_SCButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_SCButtonView.swift; sourceTree = "<group>"; };
 		C93777B922BE1BB2003120A7 /* D_SCImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_SCImageView.swift; sourceTree = "<group>"; };
 		C93777BA22BE1BB2003120A7 /* D_SCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_SCView.swift; sourceTree = "<group>"; };
@@ -1206,9 +1208,18 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		C911F2A722BF9C81004C8620 /* D_DispatchQueueHelper */ = {
+			isa = PBXGroup;
+			children = (
+				C911F2A822BF9C95004C8620 /* D_DispatchQueueHelper.swift */,
+			);
+			path = D_DispatchQueueHelper;
+			sourceTree = "<group>";
+		};
 		C93777B622BE1BB2003120A7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C911F2A722BF9C81004C8620 /* D_DispatchQueueHelper */,
 				C93777B722BE1BB2003120A7 /* D_SCViews */,
 				C93777BB22BE1BB2003120A7 /* D_Typealiases */,
 				C93777BD22BE1BB2003120A7 /* D_ScrollView */,
@@ -2162,6 +2173,7 @@
 				C93777E322BE1BB2003120A7 /* D_SCImageView.swift in Sources */,
 				C93777F622BE1BB2003120A7 /* D_TextField.swift in Sources */,
 				C93777FB22BE1BB2003120A7 /* D_Enums.swift in Sources */,
+				C911F2A922BF9C95004C8620 /* D_DispatchQueueHelper.swift in Sources */,
 				C93777EB22BE1BB2003120A7 /* D_AlertController.swift in Sources */,
 				DE9FFF94F72E9CB741193E42EE324340 /* DuckUI-dummy.m in Sources */,
 				C93777F922BE1BB2003120A7 /* D_Line.swift in Sources */,
