@@ -10,6 +10,8 @@ import Layoutless
 
 open class D_ViewController: UIViewController {
     
+    public let hud = Hud.create()
+    
     public let container = UIView()
     
     override open func viewDidLoad() {
