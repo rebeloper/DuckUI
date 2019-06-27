@@ -7,14 +7,11 @@
 
 import UIKit
 
-/// ListCell represents a cell that ListHeaderController registers and dequeues for list rendering. T represents the Class Type, usually a model or view model object, this cell should render visually.
-open class D_ListCell<T>: UICollectionViewCell {
+/// D_ListCell represents a cell that ListHeaderController registers and dequeues for list rendering. T represents the Class Type, usually a model or view model object, this cell should render visually.
+open class D_ListCell<CI>: UICollectionViewCell {
     
     /// item is fed in automatically from ListHeaderController
-    open var item: T!
-    
-    /// parentController is set to the ListHeaderController that is rendering this cell.  This is useful for scenarios where a cell contains a UIButton and you want to use addTarget(...) to trigger an action in the controller.
-    open weak var parentController: UIViewController?
+    open var item: CI!
     
     /// 90% of lists need a separator line
     public let separatorView = UIView().setBackground(color: UIColor(white: 0.6, alpha: 0.5))

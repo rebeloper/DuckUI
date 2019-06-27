@@ -1,5 +1,5 @@
 //
-//  D_ListHeaderController.swift
+//  D_ListHFController.swift
 //  DuckUI
 //
 //  Created by Alex Nagy on 27/06/2019.
@@ -8,21 +8,41 @@
 import UIKit
 
 /**
- ListHeaderController helps register, dequeues, and sets up cells with their respective items to render in a standard single section list.
+ D_ListHFController helps register, dequeues, and sets up cells with their respective items to render in a standard single section list.
  ## Generics ##
- T: the cell type that this list will register and dequeue.
+ C: the cell type that this list will register and dequeue.
  
- U: the item type that each cell will visually represent.
+ CI: the item type that each cell will visually represent.
  
  H: the header type above the section of cells.
  
+ HI: the item type that the header will visually represent.
+ 
+ F: the footer type above the section of cells.
+ 
+ FI: the item type that the footer will visually represent.
+ 
  */
-open class D_ListHeaderController<T: D_ListCell<U>, U, H: UICollectionReusableView>: UICollectionViewController {
+open class D_ListHFController<C: D_ListCell<CI>, CI, H: D_ListHeader<HI>, HI, F: D_ListFooter<FI>, FI>: UICollectionViewController {
     
     let hud = Hud.create()
     
-    /// An array of U objects this list will render. When using items.append, you still need to manually call reloadData.
-    open var items = [U]() {
+    /// An array of CI objects this list will render. When using items.append, you still need to manually call reloadData.
+    open var items = [CI]() {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
+    /// An array of HI objects this list will render as the header. Only the first element will be used by the list. Make sure this array has only one element!
+    open var headerItem = [HI]() {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
+    /// An array of FI objects this list will render as the footer. Only the first element will be used by the list. Make sure this array has only one element!
+    open var footerItem = [FI]() {
         didSet {
             collectionView.reloadData()
         }
@@ -30,26 +50,32 @@ open class D_ListHeaderController<T: D_ListCell<U>, U, H: UICollectionReusableVi
     
     fileprivate let cellId = "cellId"
     fileprivate let headerId = "headerId"
+    fileprivate let footerId = "footerId"
     
     override open func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
         
-        collectionView.register(T.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(C.self, forCellWithReuseIdentifier: cellId)
         collectionView.register(H.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView.register(F.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: footerId)
         
+        setupViews()
         observe()
         bind()
         fetchData()
     }
     
-    /// In your custom ListCell classes, just override observe() to observe events.
+    /// In your custom D_List class, just override setupViews() to provide custom behavior. We do this to avoid overriding init methods.
+    open func setupViews() {}
+    
+    /// In your custom D_List class, just override observe() to observe events.
     open func observe() {}
     
-    /// In your custom ListCell classes, just override bind() to bind elements together.
+    /// In your custom D_List class, just override bind() to bind elements together.
     open func bind() {}
     
-    // In your custom ListCell classes, just override fetchData() to manually fetch data on this particular cell. This behavior is highly unrecomended, but may be usefull in a few cases.
+    // In your custom D_List class, just override fetchData() to manually fetch data on this particular cell. This behavior is highly unrecomended, but may be usefull in a few cases.
     open func fetchData() {}
     
     /// Customize your top view here
@@ -137,29 +163,46 @@ open class D_ListHeaderController<T: D_ListCell<U>, U, H: UICollectionReusableVi
         collectionView.bounces = false
     }
     
-    /// ListHeaderController automatically dequeues your T cell and sets the correct item object on it.
-    override open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! T
-        cell.item = items[indexPath.row]
-        cell.parentController = self
-        setupCell(cell)
-        return cell
-    }
-    
     /// Override this to manually set up your cell with custom behavior.
-    open func setupCell(_ cell: T) {}
+    open func setupCell(_ cell: C) {}
     
     /// Override this to manually set up your header with custom behavior.
     open func setupHeader(_ header: H) {}
     
+    /// Override this to manually set up your footer with custom behavior.
+    open func setupFooter(_ footer: F) {}
+    
     /// Access the header of the collection view
-    open var header: UICollectionReusableView?
+    open var header: D_ListHeader<HI>?
+    
+    /// Access the footer of the collection view
+    open var footer: D_ListFooter<FI>?
+    
+    /// D_List controller automatically dequeues your C cell and sets the correct item object on it.
+    override open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! C
+        cell.item = items[indexPath.row]
+        setupCell(cell)
+        return cell
+    }
     
     override open func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! H
-        setupHeader(header)
-        self.header = header
-        return header
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! H
+            header.item = headerItem.first
+            setupHeader(header)
+            self.header = header
+            return header
+        case UICollectionView.elementKindSectionFooter:
+            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: footerId, for: indexPath) as! F
+            setupFooter(footer)
+            footer.item = footerItem.first
+            self.footer = footer
+            return footer
+        default:
+            fatalError("Invalid UICollectionView element kind")
+        }
     }
     
     override open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -172,7 +215,7 @@ open class D_ListHeaderController<T: D_ListCell<U>, U, H: UICollectionReusableVi
     }
     
     /**
-     Initializes your ListHeaderController with a plain UICollectionViewFlowLayout.
+     Initializes your D_List controller with a plain UICollectionViewFlowLayout.
      
      ## Parameters ##
      scrollDirection: direction that your cells will be rendered
@@ -185,7 +228,7 @@ open class D_ListHeaderController<T: D_ListCell<U>, U, H: UICollectionReusableVi
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("You most likely have a Storyboard controller that uses this class, please remove any instance of D_ListHeaderController or sublasses of this component from your Storyboard files.")
+        fatalError("You most likely have a Storyboard controller that uses this class, please remove any instance of D_ListHFController or sublasses of this component from your Storyboard files.")
     }
     
 }
