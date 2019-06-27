@@ -25,7 +25,7 @@ import UIKit
  */
 open class D_ListFController<C: D_ListCell<CI>, CI, F: D_ListFooter<FI>, FI>: UICollectionViewController {
     
-    let hud = Hud.create()
+    public let hud = Hud.create()
     
     /// An array of CI objects this list will render. When using items.append, you still need to manually call reloadData.
     open var items = [CI]() {
