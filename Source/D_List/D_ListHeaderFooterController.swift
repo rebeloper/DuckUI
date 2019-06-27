@@ -1,5 +1,5 @@
 //
-//  D_ListHeaderController.swift
+//  D_ListHeaderFooterController.swift
 //  DuckUI
 //
 //  Created by Alex Nagy on 27/06/2019.
@@ -8,7 +8,7 @@
 import UIKit
 
 /**
- ListHeaderController helps register, dequeues, and sets up cells with their respective items to render in a standard single section list.
+ ListHeaderFooterController helps register, dequeues, and sets up cells with their respective items to render in a standard single section list.
  ## Generics ##
  T: the cell type that this list will register and dequeue.
  
@@ -16,8 +16,10 @@ import UIKit
  
  H: the header type above the section of cells.
  
+ F: the footer type above the section of cells.
+ 
  */
-open class D_ListHeaderController<T: D_ListCell<U>, U, H: UICollectionReusableView>: UICollectionViewController {
+open class D_ListHeaderFooterController<T: D_ListCell<U>, U, H: UICollectionReusableView, F: UICollectionReusableView>: UICollectionViewController {
     
     let hud = Hud.create()
     
@@ -30,6 +32,7 @@ open class D_ListHeaderController<T: D_ListCell<U>, U, H: UICollectionReusableVi
     
     fileprivate let cellId = "cellId"
     fileprivate let headerId = "headerId"
+    fileprivate let footerId = "footerId"
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +40,7 @@ open class D_ListHeaderController<T: D_ListCell<U>, U, H: UICollectionReusableVi
         
         collectionView.register(T.self, forCellWithReuseIdentifier: cellId)
         collectionView.register(H.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView.register(F.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: footerId)
         
         observe()
         bind()
@@ -152,14 +156,30 @@ open class D_ListHeaderController<T: D_ListCell<U>, U, H: UICollectionReusableVi
     /// Override this to manually set up your header with custom behavior.
     open func setupHeader(_ header: H) {}
     
+    /// Override this to manually set up your footer with custom behavior.
+    open func setupFooter(_ footer: F) {}
+    
     /// Access the header of the collection view
     open var header: UICollectionReusableView?
     
+    /// Access the footer of the collection view
+    open var footer: UICollectionReusableView?
+    
     override open func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! H
-        setupHeader(header)
-        self.header = header
-        return header
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! H
+            setupHeader(header)
+            self.header = header
+            return header
+        case UICollectionView.elementKindSectionFooter:
+            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: footerId, for: indexPath) as! F
+            setupFooter(footer)
+            self.footer = footer
+            return footer
+        default:
+            fatalError("Invalid UICollectionView element kind")
+        }
     }
     
     override open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -185,10 +205,11 @@ open class D_ListHeaderController<T: D_ListCell<U>, U, H: UICollectionReusableVi
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("You most likely have a Storyboard controller that uses this class, please remove any instance of D_ListHeaderController or sublasses of this component from your Storyboard files.")
+        fatalError("You most likely have a Storyboard controller that uses this class, please remove any instance of D_ListHeaderFooterController or sublasses of this component from your Storyboard files.")
     }
     
 }
+
 
 
 

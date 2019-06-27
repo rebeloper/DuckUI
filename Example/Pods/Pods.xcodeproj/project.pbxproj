@@ -219,6 +219,8 @@
 		C961ABD422C4B05200790B3E /* D_ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABD322C4B05200790B3E /* D_ListCell.swift */; };
 		C961ABD622C4B08D00790B3E /* D_ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABD522C4B08D00790B3E /* D_ListController.swift */; };
 		C961ABD822C4B0BF00790B3E /* D_ListHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABD722C4B0BF00790B3E /* D_ListHeaderController.swift */; };
+		C961ABE422C4DD4000790B3E /* D_ListFooterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABE322C4DD4000790B3E /* D_ListFooterController.swift */; };
+		C961ABE622C4E04C00790B3E /* D_ListHeaderFooterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABE522C4E04C00790B3E /* D_ListHeaderFooterController.swift */; };
 		C97D3113524CF8D6570D535DEB42F62D /* Signal+ChangesetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28AA0DFB594043566943649D95AB5A /* Signal+ChangesetProtocol.swift */; };
 		CA10BEB54B5B4CA797C8B4F67E69BA63 /* jg_hud_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B29ED7DFC759E047F4503DDE81FAAF /* jg_hud_error.png */; };
 		CAC8651503FA1667B1212E0EA937E466 /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985C580B6E03A09DE48C194FFC3A133 /* TinyConstraints+superview.swift */; };
@@ -650,6 +652,8 @@
 		C961ABD322C4B05200790B3E /* D_ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListCell.swift; sourceTree = "<group>"; };
 		C961ABD522C4B08D00790B3E /* D_ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListController.swift; sourceTree = "<group>"; };
 		C961ABD722C4B0BF00790B3E /* D_ListHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHeaderController.swift; sourceTree = "<group>"; };
+		C961ABE322C4DD4000790B3E /* D_ListFooterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListFooterController.swift; sourceTree = "<group>"; };
+		C961ABE522C4E04C00790B3E /* D_ListHeaderFooterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHeaderFooterController.swift; sourceTree = "<group>"; };
 		CB45D8FA0429EF956FF105FA9C14CA8A /* Layoutless-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Layoutless-dummy.m"; sourceTree = "<group>"; };
 		CBF4019F130BF04F46FD24E3A6D6C70F /* UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableView.swift; path = Sources/Bond/UIKit/UITableView.swift; sourceTree = "<group>"; };
 		CC94ED73B3D119CF0700BE6C3B134BA5 /* Layoutless-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Layoutless-prefix.pch"; sourceTree = "<group>"; };
@@ -1383,6 +1387,8 @@
 				C961ABD322C4B05200790B3E /* D_ListCell.swift */,
 				C961ABD522C4B08D00790B3E /* D_ListController.swift */,
 				C961ABD722C4B0BF00790B3E /* D_ListHeaderController.swift */,
+				C961ABE322C4DD4000790B3E /* D_ListFooterController.swift */,
+				C961ABE522C4E04C00790B3E /* D_ListHeaderFooterController.swift */,
 			);
 			path = D_List;
 			sourceTree = "<group>";
@@ -2185,6 +2191,7 @@
 				C93777EE22BE1BB2003120A7 /* UIStackView+.swift in Sources */,
 				C93777F822BE1BB2003120A7 /* D_ViewController.swift in Sources */,
 				C93777F122BE1BB2003120A7 /* UIImageView.swift in Sources */,
+				C961ABE422C4DD4000790B3E /* D_ListFooterController.swift in Sources */,
 				C93777FD22BE219F003120A7 /* D_Hud.swift in Sources */,
 				C93777FA22BE1BB2003120A7 /* D_Log.swift in Sources */,
 				C93777F022BE1BB2003120A7 /* UIButton+.swift in Sources */,
@@ -2202,6 +2209,7 @@
 				C93777EA22BE1BB2003120A7 /* D_Debug.swift in Sources */,
 				C93777F322BE1BB2003120A7 /* UIColor+.swift in Sources */,
 				C93777F422BE1BB2003120A7 /* D_TextView+.swift in Sources */,
+				C961ABE622C4E04C00790B3E /* D_ListHeaderFooterController.swift in Sources */,
 				C93777EC22BE1BB2003120A7 /* D_Stack.swift in Sources */,
 				C93777ED22BE1BB2003120A7 /* UIView+.swift in Sources */,
 				C93777E622BE1BB2003120A7 /* D_ScrollViewElement.swift in Sources */,
