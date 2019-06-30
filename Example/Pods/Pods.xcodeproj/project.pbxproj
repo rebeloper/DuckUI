@@ -215,6 +215,7 @@
 		C93777FA22BE1BB2003120A7 /* D_Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777DD22BE1BB2003120A7 /* D_Log.swift */; };
 		C93777FB22BE1BB2003120A7 /* D_Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777E122BE1BB2003120A7 /* D_Enums.swift */; };
 		C93777FD22BE219F003120A7 /* D_Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93777FC22BE219E003120A7 /* D_Hud.swift */; };
+		C94C846622C87BEF008FD22F /* D_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E80EA822C7525200AF40F0 /* D_Color.swift */; };
 		C94DB4FC0998ADD092CC53AE8FEFB664 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2274BF92B254C9A3DC92BD94EB9D3B /* TinyConstraints.swift */; };
 		C961ABD422C4B05200790B3E /* D_ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABD322C4B05200790B3E /* D_ListCell.swift */; };
 		C961ABD822C4B0BF00790B3E /* D_ListHFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABD722C4B0BF00790B3E /* D_ListHFController.swift */; };
@@ -658,6 +659,7 @@
 		C9BEEE7222C5140E00064C54 /* D_ListHController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHController.swift; sourceTree = "<group>"; };
 		C9BEEE7422C5149000064C54 /* D_ListFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListFController.swift; sourceTree = "<group>"; };
 		C9BEEE7622C5151000064C54 /* D_ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListController.swift; sourceTree = "<group>"; };
+		C9E80EA822C7525200AF40F0 /* D_Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_Color.swift; sourceTree = "<group>"; };
 		CB45D8FA0429EF956FF105FA9C14CA8A /* Layoutless-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Layoutless-dummy.m"; sourceTree = "<group>"; };
 		CBF4019F130BF04F46FD24E3A6D6C70F /* UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableView.swift; path = Sources/Bond/UIKit/UITableView.swift; sourceTree = "<group>"; };
 		CC94ED73B3D119CF0700BE6C3B134BA5 /* Layoutless-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Layoutless-prefix.pch"; sourceTree = "<group>"; };
@@ -1233,6 +1235,7 @@
 		C93777B622BE1BB2003120A7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C9E80EA722C7523A00AF40F0 /* D_Color */,
 				C961ABD222C4B01800790B3E /* D_List */,
 				C911F2A722BF9C81004C8620 /* D_DispatchQueueHelper */,
 				C93777B722BE1BB2003120A7 /* D_SCViews */,
@@ -1397,6 +1400,14 @@
 				C9BEEE7622C5151000064C54 /* D_ListController.swift */,
 			);
 			path = D_List;
+			sourceTree = "<group>";
+		};
+		C9E80EA722C7523A00AF40F0 /* D_Color */ = {
+			isa = PBXGroup;
+			children = (
+				C9E80EA822C7525200AF40F0 /* D_Color.swift */,
+			);
+			path = D_Color;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -2190,6 +2201,7 @@
 			files = (
 				C93777E522BE1BB2003120A7 /* D_Typealiases.swift in Sources */,
 				C93777F222BE1BB2003120A7 /* UIApplication+.swift in Sources */,
+				C94C846622C87BEF008FD22F /* D_Color.swift in Sources */,
 				C93777EF22BE1BB2003120A7 /* UILabel+.swift in Sources */,
 				C961ABF522C501D100790B3E /* D_ListFooter.swift in Sources */,
 				C93777E922BE1BB2003120A7 /* D_ScrollViewContainer.swift in Sources */,
