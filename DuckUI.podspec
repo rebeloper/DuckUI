@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'DuckUI'
-    s.version          = '0.3.16'
+    s.version          = '0.3.17'
     s.summary          = 'SwiftUI for UIKit. Kinda. 😉'
     
     # This description is used to generate tags and improve search results.
