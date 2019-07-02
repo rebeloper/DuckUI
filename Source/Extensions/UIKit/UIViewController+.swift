@@ -30,7 +30,7 @@ extension UIViewController {
         }
     }
     
-    var isTabBarHidden: Bool {
+    open var isTabBarHidden: Bool {
         return (self.tabBarController?.tabBar.frame.origin.y ?? 0) > self.view.frame.maxY
     }
 }
