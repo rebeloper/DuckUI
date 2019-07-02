@@ -9,16 +9,16 @@ import UIKit
 
 extension UIViewController {
     
-    func setTabBarVisible(visible: Bool, animated: Bool, offsetY: CGFloat = 0) {
+    open func setTabBar(hidden: Bool, animated: Bool, offsetY: CGFloat = 0) {
         //* This cannot be called before viewDidLayoutSubviews(), because the frame is not set before this time
         
         // bail if the current state matches the desired state
-        if (isTabBarVisible == visible) { return }
+        if (isTabBarHidden == hidden) { return }
         
         // get a frame calculation ready
         guard let frame = self.tabBarController?.tabBar.frame else { return }
         let height = frame.size.height + offsetY
-        let offsetY = (visible ? -height : height)
+        let offsetY = (hidden ? height : -height)
         
         // zero duration means no animation
         let duration: TimeInterval = (animated ? 0.3 : 0.0)
@@ -30,8 +30,8 @@ extension UIViewController {
         }
     }
     
-    var isTabBarVisible: Bool {
-        return (self.tabBarController?.tabBar.frame.origin.y ?? 0) < self.view.frame.maxY
+    var isTabBarHidden: Bool {
+        return (self.tabBarController?.tabBar.frame.origin.y ?? 0) > self.view.frame.maxY
     }
 }
 
