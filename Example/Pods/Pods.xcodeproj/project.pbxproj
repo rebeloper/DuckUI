@@ -222,6 +222,7 @@
 		C961ABD822C4B0BF00790B3E /* D_ListHFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABD722C4B0BF00790B3E /* D_ListHFController.swift */; };
 		C961ABF322C4F25400790B3E /* D_ListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABF222C4F25400790B3E /* D_ListHeader.swift */; };
 		C961ABF522C501D100790B3E /* D_ListFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABF422C501D100790B3E /* D_ListFooter.swift */; };
+		C974764422CBCE9B004DFF05 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974764322CBCE9B004DFF05 /* UIViewController+.swift */; };
 		C97D3113524CF8D6570D535DEB42F62D /* Signal+ChangesetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28AA0DFB594043566943649D95AB5A /* Signal+ChangesetProtocol.swift */; };
 		C9BEEE7322C5140E00064C54 /* D_ListHController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEEE7222C5140E00064C54 /* D_ListHController.swift */; };
 		C9BEEE7522C5149000064C54 /* D_ListFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEEE7422C5149000064C54 /* D_ListFController.swift */; };
@@ -658,6 +659,7 @@
 		C961ABD722C4B0BF00790B3E /* D_ListHFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHFController.swift; sourceTree = "<group>"; };
 		C961ABF222C4F25400790B3E /* D_ListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHeader.swift; sourceTree = "<group>"; };
 		C961ABF422C501D100790B3E /* D_ListFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListFooter.swift; sourceTree = "<group>"; };
+		C974764322CBCE9B004DFF05 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		C9BEEE7222C5140E00064C54 /* D_ListHController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHController.swift; sourceTree = "<group>"; };
 		C9BEEE7422C5149000064C54 /* D_ListFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListFController.swift; sourceTree = "<group>"; };
 		C9BEEE7622C5151000064C54 /* D_ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListController.swift; sourceTree = "<group>"; };
@@ -1330,6 +1332,7 @@
 				C93777CF22BE1BB2003120A7 /* UIApplication+.swift */,
 				C93777D022BE1BB2003120A7 /* UIColor+.swift */,
 				C931B66622CB160500C0B439 /* UINavigationController+.swift */,
+				C974764322CBCE9B004DFF05 /* UIViewController+.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -2238,6 +2241,7 @@
 				C93777ED22BE1BB2003120A7 /* UIView+.swift in Sources */,
 				C93777E622BE1BB2003120A7 /* D_ScrollViewElement.swift in Sources */,
 				C93777F522BE1BB2003120A7 /* D_TextField+.swift in Sources */,
+				C974764422CBCE9B004DFF05 /* UIViewController+.swift in Sources */,
 				C93777E422BE1BB2003120A7 /* D_SCView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

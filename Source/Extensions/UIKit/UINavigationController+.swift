@@ -10,18 +10,19 @@ import UIKit
 extension UINavigationController {
     
     /// Hides the navigation item background. Does show the navigation items
-    open func hideNavigationItemBackground() {
-        self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationBar.shadowImage = UIImage()
-        self.navigationBar.isTranslucent = true
-        self.view.backgroundColor = UIColor.clear
-    }
-    
-    open func unHideNavigationItemBackground() {
-        //        self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        //        self.navigationBar.shadowImage = UIImage()
-        self.navigationBar.isTranslucent = false
-        self.view.backgroundColor = UIColor.white
+    open func setNavigationItemBackground(hidden: Bool) {
+        if hidden {
+            self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+            self.navigationBar.shadowImage = UIImage()
+            self.navigationBar.isTranslucent = true
+            self.view.backgroundColor = UIColor.clear
+        } else {
+            //        self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+            //        self.navigationBar.shadowImage = UIImage()
+            self.navigationBar.isTranslucent = false
+            self.view.backgroundColor = UIColor.white
+        }
+        
     }
     
     open func execute(_ transitionType: CATransitionType, _ controller: UIViewController, _ from: CATransitionSubtype, duration: CFTimeInterval = 0.3, timingFunctionName: CAMediaTimingFunctionName = .default) {
