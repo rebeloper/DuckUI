@@ -367,3 +367,17 @@ extension UIView {
     }
 }
 
+extension UIView {
+    @discardableResult
+    public func alpha(_ alpha: CGFloat) -> UIView {
+        self.alpha = alpha
+        return self
+    }
+    
+    @discardableResult
+    public func isHidden(_ isHidden: Bool) -> UIView {
+        self.isHidden = isHidden
+        return self
+    }
+}
+
