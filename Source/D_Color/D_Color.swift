@@ -25,7 +25,7 @@ public struct D_Color {
         public static let brown = UIColor(red: 153/255, green: 102/255, blue: 51/255, alpha: 1.0)
         public static let clear = UIColor(white: 0.0, alpha: 0.0)
     }
-    
+    // reference: https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
     public struct Xcode11 {
         public struct Light {
             public static let blue = UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1.0)

@@ -22,6 +22,12 @@ extension UIButton {
     }
     
     @discardableResult
+    open func text(_ color: UIColor) -> UIButton {
+        setTitleColor(color, for: .normal)
+        return self
+    }
+    
+    @discardableResult
     open func tint(_ color: UIColor) -> UIButton {
         tintColor = color
         return self

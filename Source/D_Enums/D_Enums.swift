@@ -22,3 +22,7 @@ public enum D_LineType {
 public enum D_Padding {
     case top, left, right, bottom, verticalMargins, horizontalMargins, allMargins
 }
+
+public enum D_TransitionSubtype {
+    case toTop, toBottom, toLeft, toRight
+}
