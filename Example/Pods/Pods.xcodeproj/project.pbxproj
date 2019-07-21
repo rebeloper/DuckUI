@@ -222,6 +222,9 @@
 		C961ABD822C4B0BF00790B3E /* D_ListHFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABD722C4B0BF00790B3E /* D_ListHFController.swift */; };
 		C961ABF322C4F25400790B3E /* D_ListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABF222C4F25400790B3E /* D_ListHeader.swift */; };
 		C961ABF522C501D100790B3E /* D_ListFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961ABF422C501D100790B3E /* D_ListFooter.swift */; };
+		C978C30022E45E0E00177848 /* D_ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C978C2FF22E45E0E00177848 /* D_ActivityController.swift */; };
+		C978C30322E45F0F00177848 /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C978C30222E45F0F00177848 /* Dictionary+.swift */; };
+		C978C30522E45F5200177848 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C978C30422E45F5200177848 /* Array+.swift */; };
 		C97D3113524CF8D6570D535DEB42F62D /* Signal+ChangesetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28AA0DFB594043566943649D95AB5A /* Signal+ChangesetProtocol.swift */; };
 		C9BEEE7322C5140E00064C54 /* D_ListHController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEEE7222C5140E00064C54 /* D_ListHController.swift */; };
 		C9BEEE7522C5149000064C54 /* D_ListFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEEE7422C5149000064C54 /* D_ListFController.swift */; };
@@ -658,6 +661,9 @@
 		C961ABD722C4B0BF00790B3E /* D_ListHFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHFController.swift; sourceTree = "<group>"; };
 		C961ABF222C4F25400790B3E /* D_ListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHeader.swift; sourceTree = "<group>"; };
 		C961ABF422C501D100790B3E /* D_ListFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListFooter.swift; sourceTree = "<group>"; };
+		C978C2FF22E45E0E00177848 /* D_ActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ActivityController.swift; sourceTree = "<group>"; };
+		C978C30222E45F0F00177848 /* Dictionary+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
+		C978C30422E45F5200177848 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		C9BEEE7222C5140E00064C54 /* D_ListHController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHController.swift; sourceTree = "<group>"; };
 		C9BEEE7422C5149000064C54 /* D_ListFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListFController.swift; sourceTree = "<group>"; };
 		C9BEEE7622C5151000064C54 /* D_ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListController.swift; sourceTree = "<group>"; };
@@ -1237,6 +1243,7 @@
 		C93777B622BE1BB2003120A7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C978C2FE22E45DEB00177848 /* D_ActivityController */,
 				C9E80EA722C7523A00AF40F0 /* D_Color */,
 				C961ABD222C4B01800790B3E /* D_List */,
 				C911F2A722BF9C81004C8620 /* D_DispatchQueueHelper */,
@@ -1313,6 +1320,7 @@
 		C93777C822BE1BB2003120A7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C978C30122E45EFA00177848 /* Foundation */,
 				C93777C922BE1BB2003120A7 /* UIKit */,
 				C93777D122BE1BB2003120A7 /* D_Extensions */,
 			);
@@ -1403,6 +1411,23 @@
 				C9BEEE7622C5151000064C54 /* D_ListController.swift */,
 			);
 			path = D_List;
+			sourceTree = "<group>";
+		};
+		C978C2FE22E45DEB00177848 /* D_ActivityController */ = {
+			isa = PBXGroup;
+			children = (
+				C978C2FF22E45E0E00177848 /* D_ActivityController.swift */,
+			);
+			path = D_ActivityController;
+			sourceTree = "<group>";
+		};
+		C978C30122E45EFA00177848 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				C978C30222E45F0F00177848 /* Dictionary+.swift */,
+				C978C30422E45F5200177848 /* Array+.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		C9E80EA722C7523A00AF40F0 /* D_Color */ = {
@@ -2211,8 +2236,10 @@
 				C93777E722BE1BB2003120A7 /* D_ScrollView+.swift in Sources */,
 				C9BEEE7722C5151000064C54 /* D_ListController.swift in Sources */,
 				C961ABD822C4B0BF00790B3E /* D_ListHFController.swift in Sources */,
+				C978C30522E45F5200177848 /* Array+.swift in Sources */,
 				C93777EE22BE1BB2003120A7 /* UIStackView+.swift in Sources */,
 				C93777F822BE1BB2003120A7 /* D_ViewController.swift in Sources */,
+				C978C30022E45E0E00177848 /* D_ActivityController.swift in Sources */,
 				C931B66722CB160500C0B439 /* UINavigationController+.swift in Sources */,
 				C93777F122BE1BB2003120A7 /* UIImageView.swift in Sources */,
 				C9BEEE7322C5140E00064C54 /* D_ListHController.swift in Sources */,
@@ -2230,6 +2257,7 @@
 				C93777F922BE1BB2003120A7 /* D_Line.swift in Sources */,
 				C93777E822BE1BB2003120A7 /* D_ScrollView.swift in Sources */,
 				C93777E222BE1BB2003120A7 /* D_SCButtonView.swift in Sources */,
+				C978C30322E45F0F00177848 /* Dictionary+.swift in Sources */,
 				C93777EA22BE1BB2003120A7 /* D_Debug.swift in Sources */,
 				C93777F322BE1BB2003120A7 /* UIColor+.swift in Sources */,
 				C9BEEE7522C5149000064C54 /* D_ListFController.swift in Sources */,
