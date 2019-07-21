@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct D_ActivityController {
+public struct D_ActivityController {
     
     public static func share(title: String, message: String, image: UIImage) {
         
