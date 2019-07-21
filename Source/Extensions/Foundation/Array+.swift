@@ -9,7 +9,7 @@ import Foundation
 
 extension Array {
     
-    func filterDuplicates(includeElement: @escaping (_ lhs:Element, _ rhs:Element) -> Bool) -> [Element]{
+    public func filterDuplicates(includeElement: @escaping (_ lhs:Element, _ rhs:Element) -> Bool) -> [Element]{
         var results = [Element]()
         
         forEach { (element) in
@@ -23,15 +23,11 @@ extension Array {
         
         return results
     }
-}
-
-// let filteredContacts = myContacts.filterDuplicates { $0.name == $1.name && $0.phone == $1.phone }
-
-extension Array {
-    func chunked(into size: Int) -> [[Element]] {
+    // let filteredContacts = myContacts.filterDuplicates { $0.name == $1.name && $0.phone == $1.phone }
+    
+    public func chunked(into size: Int) -> [[Element]] {
         return stride(from: 0, to: count, by: size).map {
             Array(self[$0 ..< Swift.min($0 + size, count)])
         }
     }
 }
-

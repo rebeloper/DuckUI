@@ -8,7 +8,7 @@
 import Foundation
 
 extension Dictionary {
-    mutating func update(with other:Dictionary) {
+    public mutating func update(with other:Dictionary) {
         for (key,value) in other {
             self.updateValue(value, forKey:key)
         }

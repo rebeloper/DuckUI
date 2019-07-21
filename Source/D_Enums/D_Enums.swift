@@ -26,3 +26,10 @@ public enum D_Padding {
 public enum D_TransitionSubtype {
     case toTop, toBottom, toLeft, toRight
 }
+
+public enum D_GradientDirection {
+    case leftToRight
+    case rightToLeft
+    case topToBottom
+    case bottomToTop
+}
