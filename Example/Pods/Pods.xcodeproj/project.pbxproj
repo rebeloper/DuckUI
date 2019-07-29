@@ -226,6 +226,7 @@
 		C978C30322E45F0F00177848 /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C978C30222E45F0F00177848 /* Dictionary+.swift */; };
 		C978C30522E45F5200177848 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C978C30422E45F5200177848 /* Array+.swift */; };
 		C97D3113524CF8D6570D535DEB42F62D /* Signal+ChangesetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28AA0DFB594043566943649D95AB5A /* Signal+ChangesetProtocol.swift */; };
+		C9A76F2F22EED1F900A93531 /* D_ListBackgroundImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A76F2E22EED1F900A93531 /* D_ListBackgroundImages.swift */; };
 		C9BEEE7322C5140E00064C54 /* D_ListHController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEEE7222C5140E00064C54 /* D_ListHController.swift */; };
 		C9BEEE7522C5149000064C54 /* D_ListFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEEE7422C5149000064C54 /* D_ListFController.swift */; };
 		C9BEEE7722C5151000064C54 /* D_ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEEE7622C5151000064C54 /* D_ListController.swift */; };
@@ -664,6 +665,7 @@
 		C978C2FF22E45E0E00177848 /* D_ActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ActivityController.swift; sourceTree = "<group>"; };
 		C978C30222E45F0F00177848 /* Dictionary+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
 		C978C30422E45F5200177848 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		C9A76F2E22EED1F900A93531 /* D_ListBackgroundImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListBackgroundImages.swift; sourceTree = "<group>"; };
 		C9BEEE7222C5140E00064C54 /* D_ListHController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHController.swift; sourceTree = "<group>"; };
 		C9BEEE7422C5149000064C54 /* D_ListFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListFController.swift; sourceTree = "<group>"; };
 		C9BEEE7622C5151000064C54 /* D_ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListController.swift; sourceTree = "<group>"; };
@@ -1409,6 +1411,7 @@
 				C9BEEE7222C5140E00064C54 /* D_ListHController.swift */,
 				C9BEEE7422C5149000064C54 /* D_ListFController.swift */,
 				C9BEEE7622C5151000064C54 /* D_ListController.swift */,
+				C9A76F2E22EED1F900A93531 /* D_ListBackgroundImages.swift */,
 			);
 			path = D_List;
 			sourceTree = "<group>";
@@ -2237,6 +2240,7 @@
 				C9BEEE7722C5151000064C54 /* D_ListController.swift in Sources */,
 				C961ABD822C4B0BF00790B3E /* D_ListHFController.swift in Sources */,
 				C978C30522E45F5200177848 /* Array+.swift in Sources */,
+				C9A76F2F22EED1F900A93531 /* D_ListBackgroundImages.swift in Sources */,
 				C93777EE22BE1BB2003120A7 /* UIStackView+.swift in Sources */,
 				C93777F822BE1BB2003120A7 /* D_ViewController.swift in Sources */,
 				C978C30022E45E0E00177848 /* D_ActivityController.swift in Sources */,

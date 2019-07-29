@@ -30,6 +30,21 @@ open class D_ListFController<C: D_ListCell<CI>, CI, F: D_ListFooter<FI>, FI>: UI
     /// An array of CI objects this list will render. When using items.append, you still need to manually call reloadData.
     open var items = [CI]() {
         didSet {
+            if let listBackgroundImages = listBackgroundImages {
+                if items.count > 0 {
+                    if currentBackgroundImageName != listBackgroundImages.nonEmptyImageName {
+                        guard let nonEmptyImage = UIImage(named: listBackgroundImages.nonEmptyImageName) else { return }
+                        addBackground(image: nonEmptyImage)
+                        currentBackgroundImageName = listBackgroundImages.nonEmptyImageName
+                    }
+                } else {
+                    if currentBackgroundImageName != listBackgroundImages.emptyImageName {
+                        guard let emptyImage = UIImage(named: listBackgroundImages.emptyImageName) else { return }
+                        addBackground(image: emptyImage)
+                        currentBackgroundImageName = listBackgroundImages.emptyImageName
+                    }
+                }
+            }
             collectionView.reloadData()
         }
     }
@@ -40,6 +55,9 @@ open class D_ListFController<C: D_ListCell<CI>, CI, F: D_ListFooter<FI>, FI>: UI
             collectionView.reloadData()
         }
     }
+    
+    fileprivate var currentBackgroundImageName = ""
+    open var listBackgroundImages: D_ListBackgroundImages?
     
     fileprivate let cellId = "cellId"
     fileprivate let footerId = "footerId"
@@ -147,6 +165,7 @@ open class D_ListFController<C: D_ListCell<CI>, CI, F: D_ListFooter<FI>, FI>: UI
     
     /// Adds the collection view a background image
     open func addBackground(image: UIImage) {
+        collectionView.backgroundView?.removeSubviews()
         let imageView = UIImageView(image: image.withRenderingMode(.alwaysOriginal))
         imageView.contentMode = .scaleAspectFill
         collectionView.backgroundView = imageView
