@@ -11,9 +11,11 @@ public struct D_ActivityController {
     
     public static func share(title: String, message: String, image: UIImage) {
         
+        let formattedMessage = "\n\(message)"
+        
         let objectsToShare = [
             title,
-            message,
+            formattedMessage,
             image.withRenderingMode(.alwaysOriginal)
             ] as [Any]
         
@@ -32,10 +34,7 @@ public struct D_ActivityController {
     
     public static func share(title: String, message: String, url: URL, completion: @escaping () -> ()) {
         
-        let formattedMessage = """
-        
-        \(message)
-        """
+        let formattedMessage = "\n\(message)"
         
         let objectsToShare = [
             title,
