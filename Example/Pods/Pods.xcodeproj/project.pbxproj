@@ -230,6 +230,7 @@
 		C9BEEE7322C5140E00064C54 /* D_ListHController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEEE7222C5140E00064C54 /* D_ListHController.swift */; };
 		C9BEEE7522C5149000064C54 /* D_ListFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEEE7422C5149000064C54 /* D_ListFController.swift */; };
 		C9BEEE7722C5151000064C54 /* D_ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEEE7622C5151000064C54 /* D_ListController.swift */; };
+		C9CF8DDF22F1EBD40015B616 /* D_InfoPlistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF8DDE22F1EBD40015B616 /* D_InfoPlistParser.swift */; };
 		CA10BEB54B5B4CA797C8B4F67E69BA63 /* jg_hud_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B29ED7DFC759E047F4503DDE81FAAF /* jg_hud_error.png */; };
 		CAC8651503FA1667B1212E0EA937E466 /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985C580B6E03A09DE48C194FFC3A133 /* TinyConstraints+superview.swift */; };
 		CB2E8E40895050F3A77CA69E85D8C7A6 /* OrderedCollectionDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE10F551B702775D3184C52A0857772 /* OrderedCollectionDiff.swift */; };
@@ -669,6 +670,7 @@
 		C9BEEE7222C5140E00064C54 /* D_ListHController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListHController.swift; sourceTree = "<group>"; };
 		C9BEEE7422C5149000064C54 /* D_ListFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListFController.swift; sourceTree = "<group>"; };
 		C9BEEE7622C5151000064C54 /* D_ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_ListController.swift; sourceTree = "<group>"; };
+		C9CF8DDE22F1EBD40015B616 /* D_InfoPlistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_InfoPlistParser.swift; sourceTree = "<group>"; };
 		C9E80EA822C7525200AF40F0 /* D_Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_Color.swift; sourceTree = "<group>"; };
 		CB45D8FA0429EF956FF105FA9C14CA8A /* Layoutless-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Layoutless-dummy.m"; sourceTree = "<group>"; };
 		CBF4019F130BF04F46FD24E3A6D6C70F /* UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableView.swift; path = Sources/Bond/UIKit/UITableView.swift; sourceTree = "<group>"; };
@@ -1245,6 +1247,7 @@
 		C93777B622BE1BB2003120A7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C9CF8DDD22F1EBAB0015B616 /* D_InfoPlistParser */,
 				C978C2FE22E45DEB00177848 /* D_ActivityController */,
 				C9E80EA722C7523A00AF40F0 /* D_Color */,
 				C961ABD222C4B01800790B3E /* D_List */,
@@ -1431,6 +1434,14 @@
 				C978C30422E45F5200177848 /* Array+.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		C9CF8DDD22F1EBAB0015B616 /* D_InfoPlistParser */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF8DDE22F1EBD40015B616 /* D_InfoPlistParser.swift */,
+			);
+			path = D_InfoPlistParser;
 			sourceTree = "<group>";
 		};
 		C9E80EA722C7523A00AF40F0 /* D_Color */ = {
@@ -2252,6 +2263,7 @@
 				C93777FA22BE1BB2003120A7 /* D_Log.swift in Sources */,
 				C93777F022BE1BB2003120A7 /* UIButton+.swift in Sources */,
 				C93777E322BE1BB2003120A7 /* D_SCImageView.swift in Sources */,
+				C9CF8DDF22F1EBD40015B616 /* D_InfoPlistParser.swift in Sources */,
 				C93777F622BE1BB2003120A7 /* D_TextField.swift in Sources */,
 				C93777FB22BE1BB2003120A7 /* D_Enums.swift in Sources */,
 				C911F2A922BF9C95004C8620 /* D_DispatchQueueHelper.swift in Sources */,
