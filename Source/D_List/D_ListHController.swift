@@ -92,7 +92,7 @@ open class D_ListHController<C: D_ListCell<CI>, CI, H: D_ListHeader<HI>, HI>: UI
     /// Adds the collection view a top view
     open func addTopView(height: CGFloat, safeArea: Bool = true) {
         topViewHeight = height
-        collectionView.contentInset = UIEdgeInsets(top: topViewHeight, left: 0, bottom: 0, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: topViewHeight, left: leadingViewWidth, bottom: bottomViewHeight, right: trailingViewWidth)
         collectionView.scrollIndicatorInsets = collectionView.contentInset
         
         view.addSubview(topView)
@@ -111,13 +111,13 @@ open class D_ListHController<C: D_ListCell<CI>, CI, H: D_ListHeader<HI>, HI>: UI
     /// Adds the collection view a bottom view
     open func addBottomView(height: CGFloat, safeArea: Bool = true) {
         bottomViewHeight = height
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottomViewHeight, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: topViewHeight, left: leadingViewWidth, bottom: bottomViewHeight, right: trailingViewWidth)
         collectionView.scrollIndicatorInsets = collectionView.contentInset
         
         view.addSubview(bottomView)
         bottomView.translatesAutoresizingMaskIntoConstraints = false
         
-        bottomView.bottomAnchor.constraint(equalTo: safeArea ? view.safeAreaLayoutGuide.topAnchor : view.bottomAnchor).isActive = true
+        bottomView.bottomAnchor.constraint(equalTo: safeArea ? view.safeAreaLayoutGuide.bottomAnchor : view.bottomAnchor).isActive = true
         bottomView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         bottomView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         bottomView.heightAnchor.constraint(equalToConstant: bottomViewHeight).isActive = true
@@ -125,12 +125,12 @@ open class D_ListHController<C: D_ListCell<CI>, CI, H: D_ListHeader<HI>, HI>: UI
     
     /// Customize your leading view here
     open var leadingView = UIView().setBackground(color: .white)
-    open var leadingViewWidht: CGFloat = 0
+    open var leadingViewWidth: CGFloat = 0
     
     /// Adds the collection view a leading view
     open func addLeadingView(width: CGFloat, safeArea: Bool = true) {
-        leadingViewWidht = width
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: leadingViewWidht, bottom: 0, right: 0)
+        leadingViewWidth = width
+        collectionView.contentInset = UIEdgeInsets(top: topViewHeight, left: leadingViewWidth, bottom: bottomViewHeight, right: trailingViewWidth)
         collectionView.scrollIndicatorInsets = collectionView.contentInset
         
         view.addSubview(leadingView)
@@ -139,17 +139,17 @@ open class D_ListHController<C: D_ListCell<CI>, CI, H: D_ListHeader<HI>, HI>: UI
         leadingView.leadingAnchor.constraint(equalTo: safeArea ? view.safeAreaLayoutGuide.leadingAnchor : view.leadingAnchor).isActive = true
         leadingView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         leadingView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        leadingView.widthAnchor.constraint(equalToConstant: leadingViewWidht).isActive = true
+        leadingView.widthAnchor.constraint(equalToConstant: leadingViewWidth).isActive = true
     }
     
     /// Customize your trailing view here
     open var trailingView = UIView().setBackground(color: .white)
-    open var trailingViewWidht: CGFloat = 0
+    open var trailingViewWidth: CGFloat = 0
     
     /// Adds the collection view a trailing view
     open func addTrailingView(width: CGFloat, safeArea: Bool = true) {
-        trailingViewWidht = width
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: trailingViewWidht, bottom: 0, right: 0)
+        trailingViewWidth = width
+        collectionView.contentInset = UIEdgeInsets(top: topViewHeight, left: leadingViewWidth, bottom: bottomViewHeight, right: trailingViewWidth)
         collectionView.scrollIndicatorInsets = collectionView.contentInset
         
         view.addSubview(trailingView)
@@ -158,7 +158,7 @@ open class D_ListHController<C: D_ListCell<CI>, CI, H: D_ListHeader<HI>, HI>: UI
         trailingView.trailingAnchor.constraint(equalTo: safeArea ? view.safeAreaLayoutGuide.trailingAnchor : view.trailingAnchor).isActive = true
         trailingView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         trailingView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        trailingView.widthAnchor.constraint(equalToConstant: trailingViewWidht).isActive = true
+        trailingView.widthAnchor.constraint(equalToConstant: trailingViewWidth).isActive = true
     }
     
     /// Adds the collection view a background image
