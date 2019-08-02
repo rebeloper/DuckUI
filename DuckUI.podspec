@@ -48,4 +48,6 @@ Pod::Spec.new do |s|
     s.dependency 'TinyConstraints', '~> 4.0.1'
     s.dependency 'RSKPlaceholderTextView', '~> 5.0.1'
     s.dependency 'JGProgressHUD', '~> 2.0.3'
+    s.dependency 'Kingfisher', '~> 5.7.0'
+    
 end

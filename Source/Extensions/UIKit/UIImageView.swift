@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 extension UIImageView {
     
@@ -53,5 +54,16 @@ extension UIImageView {
         translatesAutoresizingMaskIntoConstraints = false
         widthAnchor.constraint(equalToConstant: width).isActive = true
         return self
+    }
+    
+    open func setImagefrom(imageUrl: String) {
+        if imageUrl.contains("https:") {
+            if let url = URL(string: imageUrl) {
+                let resource = ImageResource(downloadURL: url)
+                self.kf.setImage(with: resource)
+            }
+        } else {
+            self.image = UIImage(named: imageUrl)
+        }
     }
 }
