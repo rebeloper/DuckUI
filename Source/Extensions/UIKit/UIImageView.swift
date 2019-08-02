@@ -56,7 +56,7 @@ extension UIImageView {
         return self
     }
     
-    open func setImagefrom(imageUrl: String) {
+    open func setImageFrom(imageUrl: String) {
         if imageUrl.contains("https:") {
             if let url = URL(string: imageUrl) {
                 let resource = ImageResource(downloadURL: url)
