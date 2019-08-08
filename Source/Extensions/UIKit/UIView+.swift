@@ -403,6 +403,15 @@ extension UIView {
         
         self.layer.insertSublayer(gradient, at: 0)
     }
+    
+    open func rotate(duration: CFTimeInterval, speed: Double, clockWise: Bool) {
+        let rotation : CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
+        rotation.toValue = NSNumber(value: Double.pi * 2 * speed * (clockWise ? 1.0 : -1.0))
+        rotation.duration = duration
+        rotation.isCumulative = true
+        rotation.repeatCount = Float.greatestFiniteMagnitude
+        self.layer.add(rotation, forKey: "rotationAnimation")
+    }
 }
 
 
