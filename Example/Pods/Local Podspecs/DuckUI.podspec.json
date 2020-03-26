@@ -1,6 +1,6 @@
 {
   "name": "DuckUI",
-  "version": "0.3.28",
+  "version": "0.5.0",
   "summary": "SwiftUI for UIKit. Kinda. 😉",
   "description": "'DuckUI is SwiftUI for UIKit. Kinda. It is an exceptionally simple way to build user interfaces in UIKit. With a declarative Swift syntax that’s easy to read and natural to write, DuckUI works seamlessly with UIKit white resembling to SwiftUI code and design principles.'",
   "homepage": "https://github.com/rebeloper/DuckUI",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/rebeloper/DuckUI.git",
-    "tag": "0.3.28"
+    "tag": "0.5.0"
   },
   "social_media_url": "https://youtube.com/rebeloper",
   "platforms": {
@@ -23,25 +23,25 @@
   "swift_versions": "5.0",
   "dependencies": {
     "ReactiveKit": [
-      "~> 3.12.3"
+      "~> 3.17.0"
     ],
     "Bond": [
-      "~> 7.5.0"
+      "~> 7.6.6"
     ],
     "Layoutless": [
-      "~> 0.4.1"
+      "~> 0.4.2"
     ],
     "TinyConstraints": [
       "~> 4.0.1"
     ],
     "RSKPlaceholderTextView": [
-      "~> 5.0.1"
+      "~> 6.0.3"
     ],
     "JGProgressHUD": [
-      "~> 2.0.3"
+      "~> 2.1"
     ],
     "Kingfisher": [
-      "~> 5.7.0"
+      "~> 5.13.2"
     ]
   },
   "swift_version": "5.0"
