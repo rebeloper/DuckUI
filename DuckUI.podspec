@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
     
     # s.public_header_files = 'Pod/Classes/**/*.h'
     # s.frameworks = 'UIKit', 'MapKit'
-    s.dependency 'ReactiveKit', '~> 3.17.0'
+    s.dependency 'ReactiveKit', '~> 3.16.4'
     s.dependency 'Bond', '~> 7.6.6'
     s.dependency 'Layoutless', '~> 0.4.2'
     s.dependency 'TinyConstraints', '~> 4.0.1'
