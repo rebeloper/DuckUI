@@ -1,11 +1,12 @@
+
 platform :ios, '12.0'
 
 use_frameworks!
 
 target 'DuckUI_Example' do
-  pod 'ReactiveKit', '~> 3.17.0'
+  pod 'ReactiveKit'
   pod 'Bond', '~> 7.6.6'
-  pod 'Layoutless', '~> 0.4.2'
+  pod 'Layoutless'
   pod 'TinyConstraints', '~> 4.0.1'
   pod 'RSKPlaceholderTextView', '~> 6.0.3'
   pod 'JGProgressHUD', '~> 2.1'
